@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <title>Web for test</title>
+  </head>
+  <body onload="getEntries()">
+    <div class="container">
+        <form id="add-entry">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>Add New Entry</h3>
+                    <div class="form-group">
+                        <label>Client Name</label>
+                        <input id="clientName" type="text" class="form-control" placeholder="Enter Client Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input id="clientEmail" type="email" class="form-control" placeholder="Enter Client Email">
+                    </div>
+                    <div class="form-group">
+                        <label>Account Number</label>
+                        <input id="accountNumber" type="text" class="form-control" placeholder="Enter Account Number">
+                    </div>
+                    <div class="form-group">
+                        <label>Account Balance</label>
+                        <input id="accountBalance" type="number" class="form-control" placeholder="Enter Account Balance">
+                    </div>
+                </div>
+                <div id="newEntry" class="col-sm-4" style="margin-left: 100px">
+                    <h3 id="newestEntryHeader">No Newest Entry</h3>
+                    <div class="newEntryBlock">
+                        <div class="form-group">
+                            <label>Client Name</label><br>
+                            <label id="lbNewClientName" class="newEntryLabel"> </label>
+                        </div>
+                        <div class="form-group">
+                            <label>Client Email</label><br>
+                            <label id="lbNewClientEmail" class="newEntryLabel"> </label>
+                        </div>
+                        <div class="form-group">
+                            <label>Account Number</label><br>
+                            <label id="lbNewAccountNumber" class="newEntryLabel"> </label>
+                        </div>
+                        <div class="form-group">
+                            <label>Account Balance</label><br>
+                            <label id="lbNewAccountBalance" class="newEntryLabel"> </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" name="submit" value="Submit" class="btn btn-primary">
+        </form>   
+        <hr />
+        <div class="row">
+            <div class="col-sm-8"><h3 style="margin-top: 0px">Client Data</h3></div>
+            <div class="col-sm-4"><input id="searchField" type="text" placeholder="Search from table..." class="form-control"/></div>
+        </div>
+        <table class="table table-hover table-bordered" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Client Name</th>
+                    <th>Email</th>
+                    <th>Account Number</th>
+                    <th>Account Balance</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+  </body>
+</html>

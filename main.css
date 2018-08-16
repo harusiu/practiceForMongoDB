@@ -1,0 +1,20 @@
+th {
+	cursor: pointer;
+	width:20%;
+}
+
+th:hover {
+	background-color: #e6f2ff;
+}
+
+.newEntryBlock {
+	border:2px solid #D4CFCF;
+	border-radius:5px;
+	padding:10px 10px 0px 10px;
+}
+
+.newEntryLabel {
+	font-size:17px;
+	font-weight: normal;
+	color: #459EB7;
+}
